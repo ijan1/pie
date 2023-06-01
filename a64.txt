@@ -99,7 +99,7 @@ simd_three_diff         0ab01110 cc1ddddd eeee00ff fffggggg, a:q, b:u, c:size, d
 simd_three_same         0ab01110 cc1ddddd ccccc1dd dddeeeee, a:q, b:u, c:size, d:rm, c:opcode, d:rn, e:rd
 simd_two_reg            0ab01110 cc10000d dddd10ee eeefffff, a:q, b:u, c:size, d:opcode, e:rn, f:rd
 simd_x_indexed          0ab01111 ccdeffff ggggh0ii iiijjjjj, a:q, b:u, c:size, d:l, e:m, f:rm, g:opcode, h:H, i:rn, j:rd
-simd_fcmla		0a101110 cc0ddddd 110ee1ff fffggggg, a:Qq, b:size, c:Rm, d:rot, e:Rn, f:Rd
+simd_fcma               0a101110 bb0ccccc 110dd1ee eeefffff, a:Q, b:size, c:Rm, d:rot, e:Rn, f:Rd
 crypto_aes              01001110 0010100a aaaa10bb bbbccccc, a:opcode, b:rn, c:rd
 crypto_sha_reg3         01011110 000aaaaa 0ccc00dd dddeeeee, a:rm, c:opcode, d:rn, e:rd
 crypto_sha_reg2         01011110 0010100a aaaa10bb bbbccccc, a:opcode, b:rn, c:rd
@@ -112,3 +112,4 @@ float_reg3              00011111 aabccccc deeeeeff fffggggg, a:type, b:o1, c:rm,
 FMOV_immed              00011110 aa1bbbbb bbb10000 000ccccc, a:type, b:imm8, c:rd
 float_cvt_fixed         a0011110 bb0ccddd eeeeeeff fffggggg, a:sf, b:type, c:rmode, d:opcode, e:scale, f:rn, g:rd
 float_cvt_int           a0011110 bb1ccddd 000000ee eeefffff, a:sf, b:type, c:rmode, d:opcode, e:rn, f:rd
+lrcpc                   aa111b00 cd1eeeee fggg00hh hhhiiiii, a:size, b:V, c:A, d:R, e:Rs, f:o3, g:opc, h:Rn, i:Rt
